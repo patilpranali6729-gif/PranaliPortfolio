@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Personal Portfolio Website - Pranali Patil">
+
+    <title>Pranali Patil | Personal Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#home">
+            Pranali Patil
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+
+                <p class="project-label">
+                    WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    Hi, I'm <span>Pranali Patil</span>
+                </h1>
+
+                <h2>
+                    Diploma Computer Engineering Student
+                </h2>
+
+                <p class="lead">
+                    I am a third year Diploma Computer Engineering student
+                    interested in web development and software development.
+                    I enjoy learning new technologies and creating simple
+                    and useful projects.
+                </p>
+
+                <a href="#projects" class="btn btn-primary me-2">
+                    View Projects
+                </a>
+
+                <a href="#contact" class="btn btn-outline-primary">
+                    Contact Me
+                </a>
+
+            </div>
+
+
+            <!-- DIRECT EMBEDDED IMAGE -->
+<div class="col-lg-5 text-center">
+
+    <img
+        class="profile-image"
+        alt="Pranali Patil"
+        src="data:image/webp;base64,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"
+    />
+
+</div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section-padding">
+
+    <div class="container">
+
+        <h2 class="section-heading">
+            About Me
+        </h2>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-9">
+
+                <p>
+                    I am Pranali Patil, a third year Diploma Computer
+                    Engineering student. I am interested in web development,
+                    programming and software technologies.
+                </p>
+
+                <p>
+                    I have knowledge of HTML, CSS, JavaScript, React.js,
+                    Bootstrap, Java, Node.js, Express.js and MongoDB.
+                    I like developing practical projects to improve my
+                    technical skills.
+                </p>
+
+                <p>
+                    My goal is to build my career in the software and
+                    web development field and continue learning new
+                    technologies.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education" class="section-padding bg-light">
+
+    <div class="container">
+
+        <h2 class="section-heading">
+            Education
+        </h2>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Diploma in Computer Engineering
+                        </h4>
+
+                        <p class="mb-2">
+                            <strong>Course:</strong>
+                            Diploma Computer Engineering
+                        </p>
+
+                        <p class="mb-2">
+                            <strong>Year:</strong>
+                            Third Year
+                        </p>
+
+                        <p class="mb-0">
+                            <strong>Field:</strong>
+                            Computer Engineering
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section-padding">
+
+    <div class="container">
+
+        <h2 class="section-heading">
+            Skills
+        </h2>
+
+        <div class="row g-3">
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-box">HTML5</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-box">CSS3</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-box">JavaScript</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-box">React.js</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-box">Bootstrap</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-box">Java</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-box">Node.js</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-box">Express.js</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-box">MongoDB</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-box">Git & GitHub</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section-padding bg-light">
+
+    <div class="container">
+
+        <h2 class="section-heading">Projects</h2>
+
+        <div class="row g-4">
+
+            <!-- Project 1 -->
+            <div class="col-lg-6">
+                <div class="card project-card h-100">
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            TechCart E-Commerce Website
+                        </h4>
+
+                        <p class="card-text">
+                            TechCart is an e-commerce website for selling
+                            electronic products. It includes product listing,
+                            search, category filtering, product details,
+                            cart, wishlist, checkout and login/register.
+                        </p>
+
+                        <p class="technology">
+                            <strong>Technology:</strong>
+                            React.js, Bootstrap, Node.js,
+                            Express.js, MongoDB
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="col-lg-6">
+                <div class="card project-card h-100">
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            BookHub – Library Management System
+                        </h4>
+
+                        <p class="card-text">
+                            BookHub is a library management system with
+                            User and Admin panels. Users can search, view
+                            and download books. Admin can manage books,
+                            categories and availability.
+                        </p>
+
+                        <p class="technology">
+                            <strong>Technology:</strong>
+                            React.js, Node.js, Express.js, MongoDB
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="col-lg-6">
+                <div class="card project-card h-100">
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Daily Task Planner
+                        </h4>
+
+                        <p class="card-text">
+                            Daily Task Planner is a simple task management
+                            application where users can add, edit, complete
+                            and delete tasks. It also provides task filters.
+                        </p>
+
+                        <p class="technology">
+                            <strong>Technology:</strong>
+                            HTML5, CSS3, JavaScript, Bootstrap 5
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Project 4 -->
+            <div class="col-lg-6">
+                <div class="card project-card h-100">
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Personal Expense Manager
+                        </h4>
+
+                        <p class="card-text">
+                            Personal Expense Manager is a React application
+                            used to record daily expenses and view total
+                            expenses with search and category filtering.
+                        </p>
+
+                        <p class="technology">
+                            <strong>Technology:</strong>
+                            React.js, CSS, Vite
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section-padding">
+
+    <div class="container">
+
+        <h2 class="section-heading">
+            Contact Me
+        </h2>
+
+        <div class="contact-box">
+
+            <p>
+                <strong>Name:</strong>
+                Pranali Patil
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:patilpranali6729@gmail.com">
+                    patilpranali6729@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/patilpranali6729-gif"
+                   target="_blank">
+                    GitHub Profile
+                </a>
+            </p>
+
+            <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/pranali-patil-7b0478415/"
+                   target="_blank">
+                    LinkedIn Profile
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <p>
+        © 2026 Pranali Patil | Personal Portfolio
+    </p>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
